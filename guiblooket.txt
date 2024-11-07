@@ -28,7 +28,7 @@ details summary ~ * {
 }
 .cheat {
     border: none;
-    background: hsl(225, 47%, 31%);
+    background: hsl(225, 90%, 31%);
     padding: 5px;
     margin: 3px;
     width: 60%;
@@ -38,7 +38,7 @@ details summary ~ * {
     cursor: pointer;
 }
 .cheat:hover {
-    background: hsl(0, 0%, 30%);
+    background: hsl(0, 0%, 60%);
 }`);
 
     const GUI = document.createElement('div');
@@ -135,7 +135,7 @@ details summary ~ * {
     bodyDiv.appendChild(body);
     GUI.appendChild(bodyDiv);
 
-    body.innerHTML = (`<span id="curPageEl">${getSite(true) ? `Current gamemode: ${getSite(true)}` : 'No game detected'}</span><br><span>(Press E to hide)</span><br>`);
+    body.innerHTML = (`<span id="curPageEl">${getSite(true) ? `Current gamemode: ${getSite(true)}` : 'No game detected'}</span><br><span>(Press p to hide)</span><br>`);
     body.style.display = 'block';
     body.style.margin = '10px';
     //body.style.background = 'white';
